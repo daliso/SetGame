@@ -27,7 +27,7 @@
             </objects>
             <point key="canvasLocation" x="-761" y="-9"/>
         </scene>
-        <!--View Controller-->
+        <!--Set Game-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SetGame" customModuleProvider="target" sceneMemberID="viewController">
@@ -79,7 +79,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="LAs-u1-SxC"/>
+                    <navigationItem key="navigationItem" title="Set Game" id="LAs-u1-SxC">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="eV8-7s-hE2"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -139,10 +141,10 @@
             </objects>
             <point key="canvasLocation" x="1073" y="-328"/>
         </scene>
-        <!--View Controller-->
+        <!--Set Game View Controller-->
         <scene sceneID="YGb-Di-0Yj">
             <objects>
-                <viewController id="noP-AZ-GtK" sceneMemberID="viewController">
+                <viewController id="noP-AZ-GtK" customClass="SetGameViewController" customModule="SetGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Z3-ny-Qgz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -15,6 +15,7 @@
 		69A3CF281FF832C9007A2989 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69A3CF261FF832C9007A2989 /* LaunchScreen.storyboard */; };
 		69A3CF331FF832C9007A2989 /* SetGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A3CF321FF832C9007A2989 /* SetGameTests.swift */; };
 		69A3CF3E1FF832C9007A2989 /* SetGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A3CF3D1FF832C9007A2989 /* SetGameUITests.swift */; };
+		69A3CF4D1FF94CC3007A2989 /* SetGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A3CF4C1FF94CC3007A2989 /* SetGameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		69A3CF391FF832C9007A2989 /* SetGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SetGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69A3CF3D1FF832C9007A2989 /* SetGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGameUITests.swift; sourceTree = "<group>"; };
 		69A3CF3F1FF832C9007A2989 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69A3CF4C1FF94CC3007A2989 /* SetGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		69A3CF191FF832C9007A2989 /* SetGame */ = {
 			isa = PBXGroup;
 			children = (
+				69A3CF4B1FF94C68007A2989 /* Controllers */,
 				69A3CF1A1FF832C9007A2989 /* AppDelegate.swift */,
 				69A3CF1C1FF832C9007A2989 /* ViewController.swift */,
 				69A3CF1E1FF832C9007A2989 /* Main.storyboard */,
@@ -126,6 +129,14 @@
 				69A3CF3F1FF832C9007A2989 /* Info.plist */,
 			);
 			path = SetGameUITests;
+			sourceTree = "<group>";
+		};
+		69A3CF4B1FF94C68007A2989 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				69A3CF4C1FF94CC3007A2989 /* SetGameViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +276,7 @@
 				69A3CF1D1FF832C9007A2989 /* ViewController.swift in Sources */,
 				69A3CF231FF832C9007A2989 /* SetGame.xcdatamodeld in Sources */,
 				69A3CF1B1FF832C9007A2989 /* AppDelegate.swift in Sources */,
+				69A3CF4D1FF94CC3007A2989 /* SetGameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
