@@ -8,22 +8,43 @@
 
 import UIKit
 
-class SetGameViewController: UIViewController {
+class SetGameViewController: UIViewController, SetGameDelegate {
+
+    @IBOutlet var cardViews: [SetCardView]!
     
-    
-    @IBOutlet var cards: [SetCard]!
-    
+    let theGame = SetGame.sharedInstance
+    let numCardsPerScreen = 10
+    var cardsOnScreen:[SetCard]? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationItem.title = "Play Game!"
-        cards[0].cardColor = .red
-        cards[0].cardShape = .triangle
-        cards[0].cardNumber = .one
+        
+        cardsOnScreen = theGame.nextBatch(ofSize: numCardsPerScreen)
+        
+        updateCardView(forCardView: cardViews[0], withColor: .red,
+                       withShape: .triangle, withNumber: .one)
 
         // Do any additional setup after loading the view.
     }
+    
+    private func updateCardView(
+        forCardView   card:SetCardView,
+        withColor color:SetCardView.SetCardColor,
+        withShape shape:SetCardView.SetCardShape,
+        withNumber number:SetCardView.SetCardNumber) {
+        
+        card.cardColor = color
+        card.cardShape = shape
+        card.cardNumber = number
+    }
+    
+    //TODO : add code to display the current score on the gameview
+    func scoreChanged(_ newScore: Int) {
+        <#code#>
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

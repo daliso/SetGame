@@ -155,31 +155,31 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="XEk-vK-DfH">
                                         <rect key="frame" x="0.0" y="0.0" width="175.5" height="587"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gB2-iK-RBY" customClass="SetCard" customModule="SetGame" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gB2-iK-RBY" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="175.5" height="111"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hE9-xm-KW5" customClass="SetCard" customModule="SetGame" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hE9-xm-KW5" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="119" width="175.5" height="111"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4W-F2-mao" customClass="SetCard" customModule="SetGame" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4W-F2-mao" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="238" width="175.5" height="111"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nA-Vj-cXd" customClass="SetCard" customModule="SetGame" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nA-Vj-cXd" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="357" width="175.5" height="111"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ha9-Pe-oW4" customClass="SetCard" customModule="SetGame" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ha9-Pe-oW4" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="476" width="175.5" height="111"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -190,31 +190,31 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="IKj-D1-fnD">
                                         <rect key="frame" x="183.5" y="0.0" width="175.5" height="587"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78X-oZ-xB8" customClass="SetCard" customModule="SetGame" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78X-oZ-xB8" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="175.5" height="111"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWe-Qw-ZLA" customClass="SetCard" customModule="SetGame" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWe-Qw-ZLA" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="119" width="175.5" height="111"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCf-Sc-4iZ" customClass="SetCard" customModule="SetGame" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCf-Sc-4iZ" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="238" width="175.5" height="111"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXl-VK-S60" customClass="SetCard" customModule="SetGame" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXl-VK-S60" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="357" width="175.5" height="111"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXJ-5c-fb7" customClass="SetCard" customModule="SetGame" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXJ-5c-fb7" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="476" width="175.5" height="111"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -235,16 +235,16 @@
                         <viewLayoutGuide key="safeArea" id="6dq-Nm-OJj"/>
                     </view>
                     <connections>
-                        <outletCollection property="cards" destination="gB2-iK-RBY" collectionClass="NSMutableArray" id="MjC-Er-E3b"/>
-                        <outletCollection property="cards" destination="hE9-xm-KW5" collectionClass="NSMutableArray" id="N0z-Nh-sc2"/>
-                        <outletCollection property="cards" destination="W4W-F2-mao" collectionClass="NSMutableArray" id="gcg-T3-Vkt"/>
-                        <outletCollection property="cards" destination="8nA-Vj-cXd" collectionClass="NSMutableArray" id="7wq-xd-NRb"/>
-                        <outletCollection property="cards" destination="Ha9-Pe-oW4" collectionClass="NSMutableArray" id="aTE-qg-zur"/>
-                        <outletCollection property="cards" destination="78X-oZ-xB8" collectionClass="NSMutableArray" id="oJJ-FW-aaN"/>
-                        <outletCollection property="cards" destination="JWe-Qw-ZLA" collectionClass="NSMutableArray" id="fc8-3B-9Ha"/>
-                        <outletCollection property="cards" destination="YCf-Sc-4iZ" collectionClass="NSMutableArray" id="gia-P1-B5V"/>
-                        <outletCollection property="cards" destination="rXl-VK-S60" collectionClass="NSMutableArray" id="uFH-5R-uqF"/>
-                        <outletCollection property="cards" destination="XXJ-5c-fb7" collectionClass="NSMutableArray" id="ba3-r8-A88"/>
+                        <outletCollection property="cardViews" destination="gB2-iK-RBY" collectionClass="NSMutableArray" id="MjC-Er-E3b"/>
+                        <outletCollection property="cardViews" destination="hE9-xm-KW5" collectionClass="NSMutableArray" id="N0z-Nh-sc2"/>
+                        <outletCollection property="cardViews" destination="W4W-F2-mao" collectionClass="NSMutableArray" id="gcg-T3-Vkt"/>
+                        <outletCollection property="cardViews" destination="8nA-Vj-cXd" collectionClass="NSMutableArray" id="7wq-xd-NRb"/>
+                        <outletCollection property="cardViews" destination="Ha9-Pe-oW4" collectionClass="NSMutableArray" id="aTE-qg-zur"/>
+                        <outletCollection property="cardViews" destination="78X-oZ-xB8" collectionClass="NSMutableArray" id="oJJ-FW-aaN"/>
+                        <outletCollection property="cardViews" destination="JWe-Qw-ZLA" collectionClass="NSMutableArray" id="fc8-3B-9Ha"/>
+                        <outletCollection property="cardViews" destination="YCf-Sc-4iZ" collectionClass="NSMutableArray" id="gia-P1-B5V"/>
+                        <outletCollection property="cardViews" destination="rXl-VK-S60" collectionClass="NSMutableArray" id="uFH-5R-uqF"/>
+                        <outletCollection property="cardViews" destination="XXJ-5c-fb7" collectionClass="NSMutableArray" id="ba3-r8-A88"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xHg-8a-P6V" userLabel="First Responder" sceneMemberID="firstResponder"/>

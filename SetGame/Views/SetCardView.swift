@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SetCard: UIButton {
+class SetCardView: UIButton {
     
     public enum SetCardColor {
         case red
