@@ -9,11 +9,18 @@
 import UIKit
 
 class SetGameViewController: UIViewController {
+    
+    
+    @IBOutlet var cards: [SetCard]!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationItem.title = "Play Game!"
+        cards[0].cardColor = .red
+        cards[0].cardShape = .triangle
+        cards[0].cardNumber = .one
 
         // Do any additional setup after loading the view.
     }
