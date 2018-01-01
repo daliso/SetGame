@@ -14,7 +14,11 @@ class SetGameViewController: UIViewController, SetGameDelegate {
     
     let theGame = SetGame.sharedInstance
     let numCardsPerScreen = 10
-    var cardsOnScreen:[SetCard]? = nil
+    var cardsOnScreen:[SetCard]? = nil {
+        didSet{
+            updateUI()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,27 +26,26 @@ class SetGameViewController: UIViewController, SetGameDelegate {
         self.navigationItem.title = "Play Game!"
         
         cardsOnScreen = theGame.nextBatch(ofSize: numCardsPerScreen)
-        
-        updateCardView(forCardView: cardViews[0], withColor: .red,
-                       withShape: .triangle, withNumber: .one)
 
         // Do any additional setup after loading the view.
     }
     
-    private func updateCardView(
-        forCardView   card:SetCardView,
-        withColor color:SetCardView.SetCardColor,
-        withShape shape:SetCardView.SetCardShape,
-        withNumber number:SetCardView.SetCardNumber) {
+    private func updateUI(){
         
-        card.cardColor = color
-        card.cardShape = shape
-        card.cardNumber = number
+        var i:Int = 0
+        
+        for card in cardsOnScreen! {
+            cardViews[i].cardColor = card.cardColor
+            cardViews[i].cardShape = card.cardShape
+            cardViews[i].cardNumber = card.cardNumber
+            i = i + 1
+        }
+        
     }
     
     //TODO : add code to display the current score on the gameview
     func scoreChanged(_ newScore: Int) {
-        <#code#>
+        // todo
     }
     
 

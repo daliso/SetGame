@@ -9,7 +9,24 @@
 import Foundation
 
 class SetCardDeck {
-    public func getCard(atIndex index:Int) -> SetCard {
+    
+    public var size:Int = 4*4*4
+    public var deck:[SetCard] {
+        var deckOfCards = [SetCard]()
         
+        for color in SetGame.SetCardColor.allValues {
+            for shape in SetGame.SetCardShape.allValues {
+                for number in SetGame.SetCardNumber.allValues {
+                    deckOfCards.append(SetCard(withColor: color, withShape: shape, withNumber: number))
+                }
+            }
+        }
+        
+        return deckOfCards
     }
+    public func getCard(atIndex index:Int) -> SetCard {
+        return deck[index]
+    }
+    
+    
 }

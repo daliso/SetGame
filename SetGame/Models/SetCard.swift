@@ -10,4 +10,17 @@ import Foundation
 
 class SetCard {
     
+    public var cardColor:SetGame.SetCardColor? = nil
+    public var cardShape:SetGame.SetCardShape? = nil
+    public var cardNumber:SetGame.SetCardNumber? = nil
+    
+    init(withColor color:SetGame.SetCardColor,
+         withShape shape:SetGame.SetCardShape,
+         withNumber num:SetGame.SetCardNumber) {
+        cardColor = color
+        cardShape = shape
+        cardNumber = num
+    }
+    
+    
 }

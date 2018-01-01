@@ -24,7 +24,9 @@ class SetGame {
     public func nextBatch(ofSize batchSize:Int) -> [SetCard] {
         var nextCardBatch = [SetCard]()
         
-        for index in deckIndex..<deckIndex + batchSize {
+        let lastIndex = max(deckIndex + batchSize, cardDeck.size)
+        
+        for index in deckIndex..<lastIndex {
             nextCardBatch.append(cardDeck.getCard(atIndex: index))
         }
         
@@ -32,6 +34,36 @@ class SetGame {
     }
     
     
+}
+
+extension SetGame {
+    public enum SetCardColor {
+        case red
+        case yellow
+        case blue
+        case black
+        
+        static let allValues = [red,yellow,blue,black]
+        
+    }
+    
+    public enum SetCardShape {
+        case triangle
+        case square
+        case star
+        case circle
+        
+        static let allValues = [triangle,square,star,circle]
+    }
+    
+    public enum SetCardNumber {
+        case one
+        case two
+        case three
+        case four
+        
+        static let allValues = [one,two,three,four]
+    }
 }
 
 protocol SetGameDelegate {

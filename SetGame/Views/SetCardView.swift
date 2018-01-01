@@ -9,26 +9,8 @@
 import UIKit
 
 class SetCardView: UIButton {
-    
-    public enum SetCardColor {
-        case red
-        case green
-        case blue
-    }
-    
-    public enum SetCardShape {
-        case triangle
-        case square
-        case star
-    }
-    
-    public enum SetCardNumber {
-        case one
-        case two
-        case three
-    }
 
-    public var cardColor:SetCardColor? = nil {
+    public var cardColor:SetGame.SetCardColor? = nil {
         didSet{
             if (cardShape != nil && cardNumber != nil){
                 updateUI()
@@ -37,7 +19,7 @@ class SetCardView: UIButton {
     }
     
     
-    public var cardShape:SetCardShape? = nil {
+    public var cardShape:SetGame.SetCardShape? = nil {
         didSet{
             if (cardColor != nil && cardNumber != nil){
                 updateUI()
@@ -45,7 +27,7 @@ class SetCardView: UIButton {
         }
     }
     
-    public var cardNumber:SetCardNumber? = nil {
+    public var cardNumber:SetGame.SetCardNumber? = nil {
         didSet{
             if (cardShape != nil && cardColor != nil){
                 updateUI()
