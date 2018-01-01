@@ -67,16 +67,16 @@ class SetGameViewController: UIViewController, SetGameDelegate, SetCardViewDeleg
         
     }
     
-    func viewShapeForSetCard(withShape setShape: SetGame.SetCardShape) -> Character {        
+    func viewShapeForSetCard(withShape setShape: SetGame.SetCardShape) -> Character {
         switch setShape {
         case .circle:
-            return "C"
+            return "⬤"
         case .square:
-            return "S"
+            return "⬛️"
         case .star:
-            return "X"
+            return "★"
         case .triangle:
-            return "T"
+            return "▲"
         }
     }
     
