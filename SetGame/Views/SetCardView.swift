@@ -9,10 +9,12 @@
 import UIKit
 
 class SetCardView: UIButton {
+    
+    public var delegate:SetCardViewDelegate? = nil
 
     public var cardColor:SetGame.SetCardColor? = nil {
         didSet{
-            if (cardShape != nil && cardNumber != nil){
+            if (cardShape != nil && cardNumber != nil && delegate != nil){
                 updateUI()
             }
         }
@@ -21,7 +23,7 @@ class SetCardView: UIButton {
     
     public var cardShape:SetGame.SetCardShape? = nil {
         didSet{
-            if (cardColor != nil && cardNumber != nil){
+            if (cardColor != nil && cardNumber != nil  && delegate != nil){
                 updateUI()
             }
         }
@@ -29,7 +31,7 @@ class SetCardView: UIButton {
     
     public var cardNumber:SetGame.SetCardNumber? = nil {
         didSet{
-            if (cardShape != nil && cardColor != nil){
+            if (cardShape != nil && cardColor != nil  && delegate != nil){
                 updateUI()
             }
         }
@@ -38,8 +40,24 @@ class SetCardView: UIButton {
     
     
     private func updateUI(){
-        self.setTitle("Hello", for:.normal)
+        
+        let viewColor = delegate?.viewColorForSetCard(withColor: cardColor!)
+        let viewShape = delegate?.viewShapeForSetCard(withShape: cardShape!)
+        var titleForCard = ""
+        
+        for _ in 0..<cardNumber!.rawValue {
+            titleForCard = titleForCard + String(viewShape!)
+        }
+        
+        self.setTitle(titleForCard, for:.normal)
+        self.setTitleColor(viewColor, for: .normal)
+        
     }
 
-
 }
+
+protocol SetCardViewDelegate {
+    func viewColorForSetCard(withColor setColor: SetGame.SetCardColor) -> UIColor
+    func viewShapeForSetCard(withShape setShape: SetGame.SetCardShape) -> Character
+}
+

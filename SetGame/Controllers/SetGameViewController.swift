@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SetGameViewController: UIViewController, SetGameDelegate {
+class SetGameViewController: UIViewController, SetGameDelegate, SetCardViewDelegate {
 
     @IBOutlet var cardViews: [SetCardView]!
     
@@ -22,6 +22,9 @@ class SetGameViewController: UIViewController, SetGameDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        for cardView in cardViews {
+            cardView.delegate = self
+        }
         
         self.navigationItem.title = "Play Game!"
         
@@ -49,6 +52,34 @@ class SetGameViewController: UIViewController, SetGameDelegate {
     }
     
 
+    func viewColorForSetCard(withColor setColor: SetGame.SetCardColor) -> UIColor {
+        
+        switch setColor {
+        case .black:
+            return UIColor.black
+        case .blue:
+            return UIColor.blue
+        case .red:
+            return UIColor.red
+        case .yellow:
+            return UIColor.yellow
+        }
+        
+    }
+    
+    func viewShapeForSetCard(withShape setShape: SetGame.SetCardShape) -> Character {        
+        switch setShape {
+        case .circle:
+            return "C"
+        case .square:
+            return "S"
+        case .star:
+            return "X"
+        case .triangle:
+            return "T"
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
