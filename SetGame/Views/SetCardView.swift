@@ -10,7 +10,14 @@ import UIKit
 
 class SetCardView: UIButton {
     
+    public var cardSelected:Bool = false {
+        didSet {
+            updateSelectedPresentation()
+        }
+    }
+    
     public var delegate:SetCardViewDelegate? = nil
+    public var setCard:SetCard? = nil
 
     public var cardColor:SetGame.SetCardColor? = nil {
         didSet{
@@ -38,7 +45,14 @@ class SetCardView: UIButton {
     }
     
     
-    
+    private func updateSelectedPresentation(){
+        if cardSelected {
+            self.backgroundColor = UIColor.lightGray
+        }
+        else{
+            self.backgroundColor = UIColor.white
+        }
+    }
     private func updateUI(){
         
         let viewColor = delegate?.viewColorForSetCard(withColor: cardColor!)

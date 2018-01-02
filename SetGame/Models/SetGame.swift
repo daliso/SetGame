@@ -17,8 +17,8 @@ class SetGame {
     
     static let sharedInstance = SetGame()
 
-    public func checkIsSet(cards:[SetCard]){
-    
+    public func checkIsSet(cards:[SetCard]) -> Bool {
+        return false
     }
     
     public func nextBatch(ofSize batchSize:Int) -> [SetCard] {
@@ -32,7 +32,6 @@ class SetGame {
         
         return nextCardBatch
     }
-    
     
 }
 
@@ -64,6 +63,11 @@ extension SetGame {
         
         static let allValues = [one,two,three,four]
     }
+}
+
+extension SetGame {
+    public static let NUM_CARDS_PER_SCREEN = 10
+    public static let NUM_CARDS_TO_MATCH = 4
 }
 
 protocol SetGameDelegate {

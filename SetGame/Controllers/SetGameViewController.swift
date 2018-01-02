@@ -10,10 +10,13 @@ import UIKit
 
 class SetGameViewController: UIViewController, SetGameDelegate, SetCardViewDelegate {
 
+    
+    let CHECK_RESULT_SEGUE = "display_result_of_check_is_set"
+    
     @IBOutlet var cardViews: [SetCardView]!
     
     let theGame = SetGame.sharedInstance
-    let numCardsPerScreen = 10
+    let numCardsPerScreen = SetGame.NUM_CARDS_PER_SCREEN
     var cardsOnScreen:[SetCard]? = nil {
         didSet{
             updateUI()
@@ -24,11 +27,15 @@ class SetGameViewController: UIViewController, SetGameDelegate, SetCardViewDeleg
         super.viewDidLoad()
         for cardView in cardViews {
             cardView.delegate = self
+            cardView.layer.cornerRadius = 5
+            cardView.clipsToBounds = true
         }
         
         self.navigationItem.title = "Play Game!"
         
         cardsOnScreen = theGame.nextBatch(ofSize: numCardsPerScreen)
+        
+        
 
         // Do any additional setup after loading the view.
     }
@@ -41,10 +48,37 @@ class SetGameViewController: UIViewController, SetGameDelegate, SetCardViewDeleg
             cardViews[i].cardColor = card.cardColor
             cardViews[i].cardShape = card.cardShape
             cardViews[i].cardNumber = card.cardNumber
+            cardViews[i].setCard = card
             i = i + 1
         }
         
     }
+    
+    
+    @IBAction func cardPressed(_ sender: SetCardView) {
+        sender.cardSelected = !sender.cardSelected
+        checkIfMaxSelected()
+    }
+    
+    
+    private func checkIfMaxSelected(){
+    // Todo - if 4 selected then send submission to game objecr
+        
+        var selectedCards = [SetCard]()
+        
+        for cardView in cardViews{
+            if cardView.cardSelected {
+                selectedCards.append(cardView.setCard!)
+            }
+        }
+        
+        if selectedCards.count == SetGame.NUM_CARDS_TO_MATCH {
+            let isSet = theGame.checkIsSet(cards: selectedCards)
+            
+            performSegue(withIdentifier: CHECK_RESULT_SEGUE, sender: self)
+        }
+    }
+    
     
     //TODO : add code to display the current score on the gameview
     func scoreChanged(_ newScore: Int) {

@@ -17,6 +17,7 @@
 		69A3CF3E1FF832C9007A2989 /* SetGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A3CF3D1FF832C9007A2989 /* SetGameUITests.swift */; };
 		69A3CF4D1FF94CC3007A2989 /* SetGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A3CF4C1FF94CC3007A2989 /* SetGameViewController.swift */; };
 		69A3CF501FF984A4007A2989 /* SetCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A3CF4F1FF984A4007A2989 /* SetCardView.swift */; };
+		69E62E3E1FFB09DA00EFE2FA /* setResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E62E3D1FFB09DA00EFE2FA /* setResultsViewController.swift */; };
 		69F0B6271FF994FE00FF0D1F /* SetCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F0B6261FF994FE00FF0D1F /* SetCard.swift */; };
 		69F0B6291FF9951000FF0D1F /* SetCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F0B6281FF9951000FF0D1F /* SetCardDeck.swift */; };
 		69F0B62B1FF9956400FF0D1F /* SetGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F0B62A1FF9956400FF0D1F /* SetGame.swift */; };
@@ -56,6 +57,7 @@
 		69A3CF3F1FF832C9007A2989 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69A3CF4C1FF94CC3007A2989 /* SetGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGameViewController.swift; sourceTree = "<group>"; };
 		69A3CF4F1FF984A4007A2989 /* SetCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCardView.swift; sourceTree = "<group>"; };
+		69E62E3D1FFB09DA00EFE2FA /* setResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setResultsViewController.swift; sourceTree = "<group>"; };
 		69F0B6261FF994FE00FF0D1F /* SetCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCard.swift; sourceTree = "<group>"; };
 		69F0B6281FF9951000FF0D1F /* SetCardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCardDeck.swift; sourceTree = "<group>"; };
 		69F0B62A1FF9956400FF0D1F /* SetGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGame.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				69A3CF4C1FF94CC3007A2989 /* SetGameViewController.swift */,
+				69E62E3D1FFB09DA00EFE2FA /* setResultsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				69A3CF1B1FF832C9007A2989 /* AppDelegate.swift in Sources */,
 				69F0B62B1FF9956400FF0D1F /* SetGame.swift in Sources */,
 				69A3CF4D1FF94CC3007A2989 /* SetGameViewController.swift in Sources */,
+				69E62E3E1FFB09DA00EFE2FA /* setResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,7 +479,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4946GL28YC;
 				INFOPLIST_FILE = SetGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.daliso.SetGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -489,7 +495,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4946GL28YC;
 				INFOPLIST_FILE = SetGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.daliso.SetGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
