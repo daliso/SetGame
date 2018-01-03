@@ -12,12 +12,14 @@ class SetGameViewController: UIViewController, SetGameDelegate, SetCardViewDeleg
 
     
     let CHECK_RESULT_SEGUE = "display_result_of_check_is_set"
+    let NUM_CARDS_PER_SCREEN = 10
+    let NUM_CARDS_TO_MATCH = 4
     var isSet:Bool? = nil
+    var selectedCards:[SetCard]? = nil
     
     @IBOutlet var cardViews: [SetCardView]!
     
     let theGame = SetGame.sharedInstance
-    let numCardsPerScreen = SetGame.NUM_CARDS_PER_SCREEN
     var cardsOnScreen:[SetCard]? = nil {
         didSet{
             updateUI()
@@ -41,11 +43,9 @@ class SetGameViewController: UIViewController, SetGameDelegate, SetCardViewDeleg
         }
         
         self.navigationItem.title = "Play Game!"
-        
-        cardsOnScreen = theGame.nextBatch(ofSize: numCardsPerScreen)
-        
-        
-
+        theGame.initializeGame(ofSize: NUM_CARDS_PER_SCREEN)
+        cardsOnScreen = theGame.cardsInPlay
+  
         // Do any additional setup after loading the view.
     }
     
@@ -72,35 +72,44 @@ class SetGameViewController: UIViewController, SetGameDelegate, SetCardViewDeleg
         checkIfMaxSelected()
     }
     
+    public func clearSelections(){
+        for cardView in cardViews {
+            cardView.cardSelected = false
+        }
+    }
+    
     public func proceedToNextBatch(){
         for cardView in cardViews {
             cardView.cardSelected = false
             cardView.setTitle("", for: .normal)
         }
-        cardsOnScreen = theGame.nextBatch(ofSize: numCardsPerScreen)
+        cardsOnScreen = theGame.cardsInPlay
     }
     
     
     private func checkIfMaxSelected(){
     // Todo - if 4 selected then send submission to game objecr
         
-        var selectedCards = [SetCard]()
+        selectedCards = [SetCard]()
         
         for cardView in cardViews{
             if cardView.cardSelected {
-                selectedCards.append(cardView.setCard!)
+                selectedCards!.append(cardView.setCard!)
             }
         }
         
-        if selectedCards.count == SetGame.NUM_CARDS_TO_MATCH {
-            isSet = theGame.checkIsSet(cards: selectedCards)
+        if selectedCards!.count == NUM_CARDS_TO_MATCH {
+            isSet = theGame.checkIsSet(cardsToMatch: selectedCards!)
+            if isSet! {
+                theGame.removeSet(selectedCards!)
+            }
             performSegue(withIdentifier: CHECK_RESULT_SEGUE, sender: self)
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == CHECK_RESULT_SEGUE {
-            let gameResultVC = segue.destination as! SetResultsViewController
+            let gameResultVC = segue.destination as! setResultsViewController
             gameResultVC.delegate = self
             gameResultVC.isGameOver = theGame.isGameOver
             gameResultVC.isSet = isSet
@@ -145,16 +154,7 @@ class SetGameViewController: UIViewController, SetGameDelegate, SetCardViewDeleg
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
+

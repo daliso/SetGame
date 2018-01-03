@@ -22,5 +22,13 @@ class SetCard {
         cardNumber = num
     }
     
-    
+}
+
+extension SetCard: Equatable {
+    static func == (lhs: SetCard, rhs: SetCard) -> Bool {
+        return
+            lhs.cardColor == rhs.cardColor &&
+                lhs.cardShape == rhs.cardShape &&
+                lhs.cardNumber == rhs.cardNumber
+    }
 }
