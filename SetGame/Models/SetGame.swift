@@ -14,6 +14,7 @@ class SetGame {
     var score:Int = 0
     let cardDeck = SetCardDeck()
     var deckIndex = 0
+    var isGameOver = false
     
     static let sharedInstance = SetGame()
 
@@ -29,7 +30,9 @@ class SetGame {
         for index in deckIndex..<lastIndex {
             nextCardBatch.append(cardDeck.getCard(atIndex: index))
         }
-        
+        deckIndex = lastIndex
+        print(deckIndex)
+
         return nextCardBatch
     }
     
@@ -68,6 +71,8 @@ extension SetGame {
 extension SetGame {
     public static let NUM_CARDS_PER_SCREEN = 10
     public static let NUM_CARDS_TO_MATCH = 4
+    
+    
 }
 
 protocol SetGameDelegate {

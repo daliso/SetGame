@@ -12,6 +12,7 @@ class SetGameViewController: UIViewController, SetGameDelegate, SetCardViewDeleg
 
     
     let CHECK_RESULT_SEGUE = "display_result_of_check_is_set"
+    var isSet:Bool? = nil
     
     @IBOutlet var cardViews: [SetCardView]!
     
@@ -29,6 +30,14 @@ class SetGameViewController: UIViewController, SetGameDelegate, SetCardViewDeleg
             cardView.delegate = self
             cardView.layer.cornerRadius = 5
             cardView.clipsToBounds = true
+        
+            cardView.layer.shadowColor = UIColor.black.cgColor
+            cardView.layer.shadowOffset = CGSize(width: 5, height: 5)
+            cardView.layer.shadowRadius = 5
+            cardView.layer.shadowOpacity = 0.5
+            cardView.layer.borderWidth = 1
+            cardView.layer.borderColor = UIColor.green.cgColor
+            cardView.layer.masksToBounds = false
         }
         
         self.navigationItem.title = "Play Game!"
@@ -40,10 +49,14 @@ class SetGameViewController: UIViewController, SetGameDelegate, SetCardViewDeleg
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        if theGame.isGameOver {
+            self.navigationController?.popViewController(animated: true)
+        }
+    }
+    
     private func updateUI(){
-        
         var i:Int = 0
-        
         for card in cardsOnScreen! {
             cardViews[i].cardColor = card.cardColor
             cardViews[i].cardShape = card.cardShape
@@ -51,13 +64,20 @@ class SetGameViewController: UIViewController, SetGameDelegate, SetCardViewDeleg
             cardViews[i].setCard = card
             i = i + 1
         }
-        
     }
     
     
     @IBAction func cardPressed(_ sender: SetCardView) {
         sender.cardSelected = !sender.cardSelected
         checkIfMaxSelected()
+    }
+    
+    public func proceedToNextBatch(){
+        for cardView in cardViews {
+            cardView.cardSelected = false
+            cardView.setTitle("", for: .normal)
+        }
+        cardsOnScreen = theGame.nextBatch(ofSize: numCardsPerScreen)
     }
     
     
@@ -73,12 +93,19 @@ class SetGameViewController: UIViewController, SetGameDelegate, SetCardViewDeleg
         }
         
         if selectedCards.count == SetGame.NUM_CARDS_TO_MATCH {
-            let isSet = theGame.checkIsSet(cards: selectedCards)
-            
+            isSet = theGame.checkIsSet(cards: selectedCards)
             performSegue(withIdentifier: CHECK_RESULT_SEGUE, sender: self)
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == CHECK_RESULT_SEGUE {
+            let gameResultVC = segue.destination as! SetResultsViewController
+            gameResultVC.delegate = self
+            gameResultVC.isGameOver = theGame.isGameOver
+            gameResultVC.isSet = isSet
+        }
+    }
     
     //TODO : add code to display the current score on the gameview
     func scoreChanged(_ newScore: Int) {

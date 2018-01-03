@@ -115,7 +115,7 @@
         <!--Set Results View Controller-->
         <scene sceneID="7Zv-SL-Ivl">
             <objects>
-                <viewController id="kmC-QU-Ly0" customClass="setResultsViewController" customModule="SetGame" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kmC-QU-Ly0" customClass="SetResultsViewController" customModule="SetGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MUX-V7-n8U">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -127,11 +127,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bYa-by-W9C">
-                                <rect key="frame" x="168" y="352" width="39" height="30"/>
-                                <state key="normal" title="Close"/>
+                                <rect key="frame" x="106.5" y="352" width="162" height="30"/>
+                                <state key="normal" title="Continue To Next Batch"/>
                                 <connections>
                                     <action selector="closeButton:" destination="JYJ-Tt-I2C" eventType="touchUpInside" id="KrU-R3-ck1"/>
-                                    <action selector="closeButton:" destination="kmC-QU-Ly0" eventType="touchUpInside" id="vE9-NT-rTj"/>
+                                    <action selector="closeButtonPressed:" destination="kmC-QU-Ly0" eventType="touchUpInside" id="vE9-NT-rTj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -144,6 +144,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MPW-GS-ewF"/>
                     </view>
+                    <connections>
+                        <outlet property="closeButton" destination="bYa-by-W9C" id="pXV-PP-ioe"/>
+                        <outlet property="resultsLabel" destination="41a-dK-Qxj" id="rWA-p6-Dkz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vd2-vy-Gl5" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="JYJ-Tt-I2C" userLabel="Exit" sceneMemberID="exit"/>
