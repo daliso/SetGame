@@ -192,13 +192,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="cVX-7W-gtb">
-                                <rect key="frame" x="16" y="80" width="343" height="571"/>
+                                <rect key="frame" x="16" y="80" width="343" height="531"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="XEk-vK-DfH">
-                                        <rect key="frame" x="0.0" y="0.0" width="163.5" height="571"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="163.5" height="531"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gB2-iK-RBY" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="163.5" height="101.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="163.5" height="93.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -208,7 +208,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hE9-xm-KW5" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="117.5" width="163.5" height="101.5"/>
+                                                <rect key="frame" x="0.0" y="109.5" width="163.5" height="93.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -218,7 +218,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4W-F2-mao" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="235" width="163.5" height="101"/>
+                                                <rect key="frame" x="0.0" y="219" width="163.5" height="93"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -228,7 +228,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nA-Vj-cXd" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="352" width="163.5" height="101.5"/>
+                                                <rect key="frame" x="0.0" y="328" width="163.5" height="93.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -238,7 +238,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ha9-Pe-oW4" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="469.5" width="163.5" height="101.5"/>
+                                                <rect key="frame" x="0.0" y="437.5" width="163.5" height="93.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -250,10 +250,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="IKj-D1-fnD">
-                                        <rect key="frame" x="179.5" y="0.0" width="163.5" height="571"/>
+                                        <rect key="frame" x="179.5" y="0.0" width="163.5" height="531"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78X-oZ-xB8" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="163.5" height="101.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="163.5" height="93.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -263,7 +263,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWe-Qw-ZLA" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="117.5" width="163.5" height="101.5"/>
+                                                <rect key="frame" x="0.0" y="109.5" width="163.5" height="93.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -273,7 +273,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCf-Sc-4iZ" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="235" width="163.5" height="101"/>
+                                                <rect key="frame" x="0.0" y="219" width="163.5" height="93"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -283,7 +283,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXl-VK-S60" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="352" width="163.5" height="101.5"/>
+                                                <rect key="frame" x="0.0" y="328" width="163.5" height="93.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -293,7 +293,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXJ-5c-fb7" customClass="SetCardView" customModule="SetGame" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="469.5" width="163.5" height="101.5"/>
+                                                <rect key="frame" x="0.0" y="437.5" width="163.5" height="93.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -306,17 +306,32 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="su8-wH-dCH">
+                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="rGk-zD-3Mx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="cVX-7W-gtb" firstAttribute="top" secondItem="6dq-Nm-OJj" secondAttribute="top" constant="16" id="3zv-9o-t8f"/>
                             <constraint firstItem="cVX-7W-gtb" firstAttribute="leading" secondItem="6dq-Nm-OJj" secondAttribute="leading" constant="16" id="7HC-ci-EFk"/>
+                            <constraint firstItem="6dq-Nm-OJj" firstAttribute="bottom" secondItem="su8-wH-dCH" secondAttribute="bottom" id="AQU-sI-yWX"/>
                             <constraint firstItem="6dq-Nm-OJj" firstAttribute="trailing" secondItem="cVX-7W-gtb" secondAttribute="trailing" constant="16" id="EhZ-mN-rsV"/>
-                            <constraint firstItem="6dq-Nm-OJj" firstAttribute="bottom" secondItem="cVX-7W-gtb" secondAttribute="bottom" constant="16" id="bgX-SN-zps"/>
+                            <constraint firstItem="6dq-Nm-OJj" firstAttribute="trailing" secondItem="su8-wH-dCH" secondAttribute="trailing" id="QCB-F0-qco"/>
+                            <constraint firstItem="su8-wH-dCH" firstAttribute="leading" secondItem="6dq-Nm-OJj" secondAttribute="leading" id="pJC-qI-u2g"/>
+                            <constraint firstItem="su8-wH-dCH" firstAttribute="top" secondItem="cVX-7W-gtb" secondAttribute="bottom" constant="16" id="wFk-vV-kyY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6dq-Nm-OJj"/>
                     </view>
                     <connections>
+                        <outlet property="scoreLabel" destination="su8-wH-dCH" id="mRQ-hI-fNO"/>
                         <outletCollection property="cardViews" destination="gB2-iK-RBY" collectionClass="NSMutableArray" id="MjC-Er-E3b"/>
                         <outletCollection property="cardViews" destination="hE9-xm-KW5" collectionClass="NSMutableArray" id="N0z-Nh-sc2"/>
                         <outletCollection property="cardViews" destination="W4W-F2-mao" collectionClass="NSMutableArray" id="gcg-T3-Vkt"/>

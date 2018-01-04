@@ -16,6 +16,7 @@ class SetGameViewController: UIViewController, SetGameDelegate, SetCardViewDeleg
     let NUM_CARDS_TO_MATCH = 4
     var isSet:Bool? = nil
     var selectedCards:[SetCard]? = nil
+    @IBOutlet weak var scoreLabel: UILabel!
     
     @IBOutlet var cardViews: [SetCardView]!
     
@@ -43,6 +44,8 @@ class SetGameViewController: UIViewController, SetGameDelegate, SetCardViewDeleg
         }
         
         self.navigationItem.title = "Play Game!"
+        theGame.delegate = self
+        
         theGame.initializeGame(ofSize: NUM_CARDS_PER_SCREEN)
         cardsOnScreen = theGame.cardsInPlay
   
@@ -118,7 +121,7 @@ class SetGameViewController: UIViewController, SetGameDelegate, SetCardViewDeleg
     
     //TODO : add code to display the current score on the gameview
     func scoreChanged(_ newScore: Int) {
-        // todo
+        scoreLabel.text = "Score : \(newScore)"
     }
     
 

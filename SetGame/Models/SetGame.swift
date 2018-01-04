@@ -17,6 +17,7 @@ class SetGame {
     var isGameOver = false
     var cardsInPlay:[SetCard]? = nil
     var validSetsInPlay:[[SetCard]]? = nil
+    var delegate:SetGameDelegate? = nil
     
     static let sharedInstance = SetGame()
 
@@ -129,6 +130,8 @@ class SetGame {
         if validSetsInPlay!.count < 1 {
             isGameOver = true
         }
+        score = score + 1
+        delegate?.scoreChanged(score)
         print(deckIndex)
     }
     
