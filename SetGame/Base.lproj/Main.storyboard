@@ -120,8 +120,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is where the check result will go" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41a-dK-Qxj">
-                                <rect key="frame" x="47" y="323" width="281" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is where the check result will go This is where the check result will go" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41a-dK-Qxj">
+                                <rect key="frame" x="32" y="323" width="311" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -139,8 +139,10 @@
                         <constraints>
                             <constraint firstItem="41a-dK-Qxj" firstAttribute="centerY" secondItem="MUX-V7-n8U" secondAttribute="centerY" id="6HC-y6-755"/>
                             <constraint firstItem="41a-dK-Qxj" firstAttribute="centerX" secondItem="MUX-V7-n8U" secondAttribute="centerX" id="F99-1l-Jj2"/>
+                            <constraint firstItem="41a-dK-Qxj" firstAttribute="leading" secondItem="MPW-GS-ewF" secondAttribute="leading" constant="32" id="GbJ-bO-wm5"/>
                             <constraint firstItem="bYa-by-W9C" firstAttribute="centerX" secondItem="41a-dK-Qxj" secondAttribute="centerX" id="dTh-fS-Kqt"/>
                             <constraint firstItem="bYa-by-W9C" firstAttribute="top" secondItem="41a-dK-Qxj" secondAttribute="bottom" constant="8" symbolic="YES" id="sOZ-vq-9HV"/>
+                            <constraint firstItem="MPW-GS-ewF" firstAttribute="trailing" secondItem="41a-dK-Qxj" secondAttribute="trailing" constant="32" id="yUb-qC-OKT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MPW-GS-ewF"/>
                     </view>

@@ -143,6 +143,19 @@ extension SetGame {
         
         static let allValues = [red,yellow,blue,black]
         
+        var description:String {
+            switch self {
+            case .red:
+                return "red"
+            case .yellow:
+                return "yellow"
+            case .blue:
+                return "blue"
+            case .black:
+                return "black"
+            }
+        }
+        
     }
     
     public enum SetCardShape {
@@ -152,6 +165,19 @@ extension SetGame {
         case circle
         
         static let allValues = [triangle,square,star,circle]
+        
+        var description:String {
+            switch self {
+            case .triangle:
+                return "triangle"
+            case .square:
+                return "square"
+            case .star:
+                return "star"
+            case .circle:
+                return "circle"
+            }
+        }
     }
     
     public enum SetCardNumber: Int {
@@ -161,6 +187,19 @@ extension SetGame {
         case four = 4
         
         static let allValues = [one,two,three,four]
+        
+        var description:String {
+            switch self {
+            case .one:
+                return "one"
+            case .two:
+                return "two"
+            case .three:
+                return "three"
+            case .four:
+                return "four"
+            }
+        }
     }
 }
 

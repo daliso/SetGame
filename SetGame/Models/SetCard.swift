@@ -46,3 +46,11 @@ extension SetCard: NSCopying {
         return copy
     }
 }
+
+extension SetCard: Hashable {
+    var hashValue: Int {
+        return (cardNumber!.description + cardShape!.description + cardColor!.description).hashValue
+    }
+    
+
+}

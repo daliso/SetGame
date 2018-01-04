@@ -132,7 +132,7 @@ class SetGameViewController: UIViewController, SetGameDelegate, SetCardViewDeleg
         case .red:
             return UIColor.red
         case .yellow:
-            return UIColor.yellow
+            return UIColor(red:0.94, green:0.89, blue:0.00, alpha:1.0) //UIColor.yellow
         }
         
     }
