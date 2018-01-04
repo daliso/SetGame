@@ -66,6 +66,7 @@ class SetCardView: UIButton {
         self.setTitle(titleForCard, for:.normal)
         self.setTitleColor(viewColor, for: .normal)
         
+        
     }
 
 }

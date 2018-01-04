@@ -76,11 +76,35 @@ class SetGame {
         }
         
         deckIndex = batchSize
+        updateValidSetsInPlay()
+
         print(deckIndex)
     }
     
     private func updateValidSetsInPlay(){
         // find all the subsets of cardsInPlay
+        
+        let size = cardsInPlay!.count
+        validSetsInPlay = [[SetCard]]()
+        
+        for i in 0..<size {
+            for j in i+1..<size{
+                for k in j+1..<size {
+                    for l in k+1..<size {
+                        let setToCheck = [cardsInPlay![i],
+                                          cardsInPlay![j],
+                                          cardsInPlay![k],
+                                          cardsInPlay![l]]
+                        
+                        if checkIsSet(cardsToMatch: setToCheck) {
+                            validSetsInPlay!.append(setToCheck)
+                        }
+                    }
+                }
+            }
+        }
+        
+        print("Valid sets are: \(validSetsInPlay!)")
     }
     
     public func removeSet(_ setOfCards:[SetCard]) {
@@ -107,20 +131,6 @@ class SetGame {
         }
         print(deckIndex)
     }
-    
-//    public func nextBatch(ofSize batchSize:Int) -> [SetCard] {
-//        var nextCardBatch = [SetCard]()
-//
-//        let lastIndex = min(deckIndex + batchSize, cardDeck.size)
-//
-//        for index in deckIndex..<lastIndex {
-//            nextCardBatch.append(cardDeck.getCard(atIndex: index))
-//        }
-//        deckIndex = lastIndex
-//        print(deckIndex)
-//
-//        return nextCardBatch
-//    }
     
 }
 

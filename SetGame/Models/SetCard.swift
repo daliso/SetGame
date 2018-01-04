@@ -32,3 +32,17 @@ extension SetCard: Equatable {
                 lhs.cardNumber == rhs.cardNumber
     }
 }
+
+extension SetCard: CustomStringConvertible {
+    var description: String {
+        return "<\(cardNumber!),\(cardColor!),\(cardShape!)>"
+    }
+}
+
+
+extension SetCard: NSCopying {
+    func copy(with zone: NSZone? = nil) -> Any {
+        let copy = SetCard(withColor: cardColor!, withShape: cardShape!, withNumber: cardNumber!)
+        return copy
+    }
+}

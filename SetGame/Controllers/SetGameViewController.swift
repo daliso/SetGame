@@ -19,7 +19,7 @@ class SetGameViewController: UIViewController, SetGameDelegate, SetCardViewDeleg
     
     @IBOutlet var cardViews: [SetCardView]!
     
-    let theGame = SetGame.sharedInstance
+    var theGame = SetGame()
     var cardsOnScreen:[SetCard]? = nil {
         didSet{
             updateUI()
@@ -140,9 +140,9 @@ class SetGameViewController: UIViewController, SetGameDelegate, SetCardViewDeleg
     func viewShapeForSetCard(withShape setShape: SetGame.SetCardShape) -> Character {
         switch setShape {
         case .circle:
-            return "⬤"
+            return "⚫︎"
         case .square:
-            return "⬛️"
+            return "￭"
         case .star:
             return "★"
         case .triangle:
